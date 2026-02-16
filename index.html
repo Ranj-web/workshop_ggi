@@ -4,206 +4,80 @@
     <meta charset="UTF-8">
     <title>Ranjan | Student Portfolio</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <!-- Google Font -->
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
-
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: 'Poppins', sans-serif;
-        }
-
-        body {
-            background: #0f172a;
-            color: white;
-            line-height: 1.6;
-        }
-
-        header {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 20px 10%;
-            background: #0f172a;
-            position: fixed;
-            width: 100%;
-        }
-
-        header h2 {
-            color: #38bdf8;
-        }
-
-        nav a {
-            color: white;
-            text-decoration: none;
-            margin-left: 25px;
-            transition: 0.3s;
-        }
-
-        nav a:hover {
-            color: #38bdf8;
-        }
-
-        .hero {
-            height: 100vh;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            flex-direction: column;
-            text-align: center;
-            padding: 0 20px;
-        }
-
-        .hero h1 {
-            font-size: 48px;
-        }
-
-        .hero span {
-            color: #38bdf8;
-        }
-
-        .hero p {
-            margin: 20px 0;
-            max-width: 600px;
-        }
-
-        .btn {
-            padding: 12px 30px;
-            background: #38bdf8;
-            border: none;
-            color: white;
-            border-radius: 25px;
-            cursor: pointer;
-            transition: 0.3s;
-        }
-
-        .btn:hover {
-            background: #0284c7;
-        }
-
-        section {
-            padding: 80px 10%;
-        }
-
-        h2.section-title {
-            text-align: center;
-            margin-bottom: 40px;
-            color: #38bdf8;
-        }
-
-        .about, .skills, .projects {
-            text-align: center;
-        }
-
-        .skills-list {
-            display: flex;
-            justify-content: center;
-            flex-wrap: wrap;
-            gap: 20px;
-        }
-
-        .skill {
-            background: #1e293b;
-            padding: 15px 25px;
-            border-radius: 20px;
-        }
-
-        .project-container {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 20px;
-        }
-
-        .project {
-            background: #1e293b;
-            padding: 20px;
-            border-radius: 15px;
-            transition: 0.3s;
-        }
-
-        .project:hover {
-            transform: translateY(-5px);
-        }
-
-        footer {
-            text-align: center;
-            padding: 20px;
-            background: #1e293b;
-        }
-
-        @media (max-width: 768px) {
-            .hero h1 {
-                font-size: 32px;
-            }
-        }
-    </style>
 </head>
 
 <body>
 
-<header>
-    <h2>Ranjan.</h2>
-    <nav>
-        <a href="#about">About</a>
-        <a href="#skills">Skills</a>
-        <a href="#projects">Projects</a>
-        <a href="#contact">Contact</a>
-    </nav>
-</header>
+    <!-- Header -->
+    <header>
+        <h2>Ranjan.</h2>
+        <nav>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
 
-<section class="hero">
-    <h1>Hi, I'm <span>Ranjan Wahengbam</span></h1>
-    <p>A passionate Computer Science student interested in Web Development, AI, and Problem Solving.</p>
-    <button class="btn">Download Resume</button>
-</section>
+    <!-- Hero Section -->
+    <section id="home">
+        <h1>Hi, I'm Ranjan Wahengbam</h1>
+        <p>A passionate Computer Science student interested in Web Development, AI, and Problem Solving.</p>
+        <button>Download Resume</button>
+    </section>
 
-<section id="about" class="about">
-    <h2 class="section-title">About Me</h2>
-    <p>I am a motivated student who loves building innovative projects and learning new technologies. My goal is to become a full-stack developer and contribute to impactful tech solutions.</p>
-</section>
+    <!-- About Section -->
+    <section id="about">
+        <h2>About Me</h2>
+        <p>
+            I am a motivated student who loves building innovative projects and learning new technologies.
+            My goal is to become a full-stack developer and contribute to impactful tech solutions.
+        </p>
+    </section>
 
-<section id="skills" class="skills">
-    <h2 class="section-title">Skills</h2>
-    <div class="skills-list">
-        <div class="skill">HTML</div>
-        <div class="skill">CSS</div>
-        <div class="skill">JavaScript</div>
-        <div class="skill">C Programming</div>
-        <div class="skill">Node.js</div>
-        <div class="skill">MongoDB</div>
-    </div>
-</section>
+    <!-- Skills Section -->
+    <section id="skills">
+        <h2>Skills</h2>
+        <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+            <li>C Programming</li>
+            <li>Node.js</li>
+            <li>MongoDB</li>
+        </ul>
+    </section>
 
-<section id="projects" class="projects">
-    <h2 class="section-title">Projects</h2>
-    <div class="project-container">
-        <div class="project">
+    <!-- Projects Section -->
+    <section id="projects">
+        <h2>Projects</h2>
+
+        <div>
             <h3>Disease Prediction System</h3>
             <p>Machine Learning based system for predicting diseases using user symptoms.</p>
         </div>
-        <div class="project">
+
+        <div>
             <h3>PhishGuard EDU</h3>
             <p>AI-based phishing awareness training dashboard for students.</p>
         </div>
-        <div class="project">
+
+        <div>
             <h3>Personal Portfolio</h3>
             <p>Responsive portfolio website built using modern web technologies.</p>
         </div>
-    </div>
-</section>
+    </section>
 
-<section id="contact">
-    <h2 class="section-title">Contact Me</h2>
-    <p style="text-align:center;">Email: ranjan@example.com</p>
-</section>
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <p>Email: ranjan@example.com</p>
+    </section>
 
-<footer>
-    <p>© 2026 Ranjan Wahengbam | All Rights Reserved</p>
-</footer>
+    <!-- Footer -->
+    <footer>
+        <p>© 2026 Ranjan Wahengbam | All Rights Reserved</p>
+    </footer>
 
 </body>
 </html>
-
